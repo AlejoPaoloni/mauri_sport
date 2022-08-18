@@ -10,14 +10,18 @@
 .grid {
    font-family: 'Nunito', sans-serif;
    background-color: #ffffe0;
-   padding: 3rem;
+   padding: 6rem;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
    grid-template-rows: 1fr 1fr;
+   grid-template-areas:
+      "grid_liquidacion grid_liquidacion grid_liquidacion grid_liquidacion"
+      "grid_running grid_deportes grid_gym grid_moda ";
    gap: 1rem;
 }
 
 .grid_item {
+   
    display: grid;
    font-size: 1.6rem;
    font-weight: 400;
@@ -28,19 +32,32 @@
    align-items: center;
 }
 
-.grid_item a{
+.grid_item a {
    text-decoration: none;
-   background-color: #0000006a;
+   background-color: #00000000;
    border-radius: 1rem;
-   color: white;
-  padding: 1px;
-   font-size: 30px;
+   color: rgba(255, 255, 255, 0);
+   padding: 1px;
+   width: 18rem;
+   height: 21rem;
 }
+/*transition grid*/
+.grid_item{
+   transition: transform .3s;
+}
+/*fin transition grid*/
+
+/*transform grid*/
+.grid_item:hover{
+   transform: scale(1.1) translateY(-40px);
+   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+/*fin transform grid*/
+
 /*liquidacion*/
 .grid_liquidacion {
-   grid-column: 1/5;
-   grid-row: 1/2;
-   background-image: url(../img/liquidacion_img.jpg);
+   grid-area: grid_liquidacion;
+   background-image: url(../videos/liquidacion_video.gif);
    height: 350px;
 }
 
@@ -48,31 +65,68 @@
 
 /*running*/
 .grid_running {
-   background-image: url(../img/running_img.jpg);
+   grid-area: grid_running;
+   background-image: url(../videos/running_video.gif);
 }
 
 /*fin running*/
 
 /*deportes*/
 .grid_deportes {
-   background-image: url(../img/deportes_img.jpg);
+   grid-area: grid_deportes;
+   background-image: url(../videos/deportes_video.gif);
 }
 
 /*fin deportes*/
 
 /*gym*/
 .grid_gym {
-   background-image: url(../img/gym_img.jpg);
+   grid-area: grid_gym;
+   background-image: url(../videos/gym_video.gif);
 }
 
 /*fin gym*/
 
 /*moda*/
 .grid_moda {
-   background-image: url(../img/moda_img.jpg)
+   grid-area: grid_moda;
+   background-image: url(../videos/moda_video.gif)
 }
 
 /*fin moda*/
+
+/**categorias grid**/
+
+/*calzado*/
+.grid_categorias {
+   transition: width 1s;
+   font-family: 'Nunito', sans-serif;
+   background-color: #ffffe0;
+   padding: 6rem;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-areas:
+      "grid_calzado grid_indumentaria grid_accesorios"
+      "grid_calzado grid_indumentaria grid_accesorios";
+   gap: 1rem;
+}
+
+.grid_calzado {
+   grid-area: grid_calzado;
+   background-image: url(../img/calzado_img.jpg);
+}
+
+.grid_indumentaria {
+   grid-area: grid_indumentaria;
+   background-image: url(../img/indumentaria_img.jpg);
+}
+
+.grid_accesorios {
+   grid-area: grid_accesorios;
+   background-image: url(../img/accesorios_img.jpg);
+}
+
 /****fin seccion GRID****/
 
 /*logo*/
@@ -86,21 +140,25 @@ header {
 
 .mauri_logo {
    display: flex;
-   width: 230px;
-   border: 3px solid black;
+   width: 420px;
+   height: 320px;
+   margin-right: 10rem;
 }
 
 /*fin logo*/
 
 /*body*/
 body {
-   min-width: 100vh
+   background-color: #ffffe0;
+   height: 100vh;
 }
 
 /*fin body*/
 
 /*menu inicio*/
 .menu {
+   margin-left: -31rem;
+   margin-top: 8rem;
    background-color: #ffffe0;
    color: black;
    font-family: 'Nunito', sans-serif;
@@ -110,12 +168,13 @@ body {
    gap: 20px;
    grid-gap: 10px;
    align-items: center;
-   height: 100%;
+   justify-content: center;
 }
 
 .menu__item {
    display: inline-block;
    margin-inline: 10px;
+   padding-top: 1rem;
 }
 
 .menu__item a {
@@ -134,27 +193,32 @@ body {
 /*fin menu inicio*/
 
 /*sub menu*/
-.menu {
+.menu__item {
    list-style-type: none;
    background-color: #ffffe0;
    padding-block: 20px;
-   position: sticky;
    top: 0;
    display: flex;
    align-items: center;
+   justify-content: center;
+}
+
+.sub_menu {
+   padding-left: 10px;
+   align-items: center;
+   justify-content: center;
 }
 
 /*fin sub menu*/
 
 /*buscador*/
 .search {
-   width: 300px;
-   height: 40px;
-   margin-top: 45px;
-   margin-left: 200px;
+   width: 380px;
+   height: 45px;
+   margin-top:1.5rem;
    display: flex;
    border-radius: 10px;
-   border: solid black 5px;
+   border: solid black 3px;
 }
 
 /*fin buscador*/
@@ -168,7 +232,6 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 50px;
 }
 
 /*fin titulo*/
@@ -204,6 +267,8 @@ body {
 }
 
 .productos {
+   justify-content: center;
+   align-items: center;
    width: 30%;
    background-color: black;
    padding: 10px;
@@ -236,13 +301,37 @@ body {
    background-color: white;
    color: black;
    font-family: Arial, Helvetica, sans-serif;
-   font-weight: 500;
+   font-weight: 400;
    border-radius: 15px;
    border: none;
-   padding: 10px;
+   padding: 8px;
 }
 
 /*fin productos*/
+
+/***categorias***/
+/*calzado*/
+.div_calzado {
+   padding-left: 17rem;
+   padding-right: 63rem;
+   justify-content: center;
+   align-items: center;
+}
+
+.sec_calzado {
+   color: black;
+   background-color: rgba(0, 0, 0, 0.128);
+   padding: 5px;
+}
+
+.sec_calzado_item {
+   text-decoration: none;
+   color: black;
+}
+
+.sec_calzado_item:hover {
+   text-decoration: underline;
+}
 
 /*contacto*/
 .contacto {
@@ -266,6 +355,7 @@ footer {
    padding-top: 0;
    display: flex;
    flex-direction: column;
+   padding-top: 10rem;
 }
 
 /*redes*/
@@ -275,9 +365,13 @@ footer {
 }
 
 .redes {
+   padding-top: 1rem;
    text-align: end;
-
    background-color: black;
+}
+
+.redes3 {
+   padding-right: 3rem;
 }
 
 /*horarios*/
@@ -286,9 +380,7 @@ footer {
    list-style-type: none;
    background-color: black;
    color: white;
-
    padding-bottom: 20px;
-
 }
 
 .dias {
@@ -297,3 +389,128 @@ footer {
 
 /*fin horarios*/
 /*fin footer*/
+
+@media screen and (max-width: 480px) {
+   /*logo*/
+   header {
+      flex-direction: column;
+   }
+   .mauri_logo {
+      padding-left: 40px;
+      height: 270px;
+      width: 440px;
+   }
+   /*fin logo*/
+
+   /*buscador*/
+   .search{
+      margin-top: -3rem;
+      margin-left: 3rem;
+      align-items: center;
+      justify-content: center;
+   }
+/*fin buscador*/
+
+/*menu*/
+   .menu {
+      margin: 0px;
+      margin-right: 1rem;
+      font-size: 14px;
+      padding-left: 15px;
+   }
+/*fin menu*/
+
+/*titulo*/
+   .titulo {
+      font-size: 20px;
+   }
+/*fin titulo*/
+
+/*grid inicio*/
+   .grid{
+      flex-direction: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+      "grid_liquidacion"
+      "grid_running"
+      "grid_deportes"
+      "grid_gym"
+      "grid_moda"
+   }
+   .grid_item {
+      margin-bottom: 20px;
+      margin-left: 1.2rem;
+      width: 250px;
+      height: 180px;
+   }
+/*fin grid inicio*/
+
+   /*grid categorias*/
+   .grid_categorias{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+      "grid_calzado"
+      "grid_indumentaria"
+      "grid_accesorios"
+   }
+   /*fin grid categorias*/
+
+   /*productos*/
+   .productos{
+      flex-direction: column;
+      width: 220px;
+      height: 410px;
+   }
+
+   .sec_producto{
+      justify-content: center;
+      align-items: center;
+      margin: 3px;
+   }
+
+   .local{
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+   }
+   .local__imagen{
+      margin: 0;
+      margin-left: 15px;
+      width: 450px;
+   }
+   .local__parrafo{
+      font-size: 20px;
+      padding-left: 4.5rem;
+   }
+
+   .contacto{
+      display: flex;
+      flex-direction: column;
+   }
+   .boton_contacto{
+      width: 100px;
+      margin-left: 12rem;
+   }
+}
+
+/*boostrap*/
+.header-contenedor{
+   background-color: #00ffff;
+}
+
+main.container{
+   background-color: #8a2be2;
+}
+
+.crow{
+   background-color: coral;
+}
+.col{
+   background-color: coral;
+}
+
+.fluid{
+   background-color: blue;
+}
