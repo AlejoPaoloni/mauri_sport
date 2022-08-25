@@ -9,7 +9,6 @@
 /****GRID****/
 .grid {
    font-family: 'Nunito', sans-serif;
-   background-color: #ffffe0;
    padding: 6rem;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
@@ -127,106 +126,34 @@
    background-image: url(../img/accesorios_img.jpg);
 }
 
+/*sub-menu grid*/
+.nav-link1.active{
+   background-color: rgba(0, 0, 0, 0.264);
+   color: black;
+}
+.nav-link1{
+}
+/*fin sub-menu grid*/
 /****fin seccion GRID****/
 
 /*logo*/
-header {
-   background-color: #ffffe0;
-   padding-bottom: 10px;
+.logo_mauri {
    display: flex;
-   gap: 20px;
-   grid-gap: 20px;
-}
-
-.mauri_logo {
-   display: flex;
-   width: 420px;
-   height: 320px;
-   margin-right: 10rem;
+   width: 400px;
+   height: 300px;
 }
 
 /*fin logo*/
 
 /*body*/
 body {
-   background-color: #ffffe0;
    height: 100vh;
 }
-
 /*fin body*/
-
-/*menu inicio*/
-.menu {
-   margin-left: -31rem;
-   margin-top: 8rem;
-   background-color: #ffffe0;
-   color: black;
-   font-family: 'Nunito', sans-serif;
-   font-size: x-large;
-   font-weight: 500;
-   display: flex;
-   gap: 20px;
-   grid-gap: 10px;
-   align-items: center;
-   justify-content: center;
-}
-
-.menu__item {
-   display: inline-block;
-   margin-inline: 10px;
-   padding-top: 1rem;
-}
-
-.menu__item a {
-   color: black;
-   text-decoration: none;
-}
-
-.menu__item.active a {
-   text-decoration: underline double;
-}
-
-.menu__item a:hover {
-   text-decoration: underline;
-}
-
-/*fin menu inicio*/
-
-/*sub menu*/
-.menu__item {
-   list-style-type: none;
-   background-color: #ffffe0;
-   padding-block: 20px;
-   top: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.sub_menu {
-   padding-left: 10px;
-   align-items: center;
-   justify-content: center;
-}
-
-/*fin sub menu*/
-
-/*buscador*/
-.search {
-   width: 380px;
-   height: 45px;
-   margin-top:1.5rem;
-   display: flex;
-   border-radius: 10px;
-   border: solid black 3px;
-}
-
-/*fin buscador*/
 
 /*titulo*/
 .titulo {
    font-family: "Roboto Slab", serif;
-   background-color: #ffffe0;
    text-decoration: underline;
    color: black;
    display: flex;
@@ -235,6 +162,8 @@ body {
 }
 
 /*fin titulo*/
+
+
 
 /*nosotros local*/
 .local {

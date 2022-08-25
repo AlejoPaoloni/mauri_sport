@@ -5,56 +5,67 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAURI SPORT</title>
+  <title>MAURI SPORT|Nosotros</title>
 
   <!-- icono pagina -->
-  <link rel="shortcut icon" href="../img/logo_mauri_sport.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/ms_logo.jpg" type="image/x-icon">
   <!-- fin icono pagina -->
 
   <!-- css -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- fin css -->
 </head>
 
 <body>
   <section class="hero">
-    <header>
-      <!-- logo mauri -->
-      <img class="mauri_logo" src="../img/logo_mauri_sport.jpg" alt="logo_mauri">
-      <!-- fin logo mauri -->
-
-      <!-- buscador -->
-      <div>
-        <input class="search" type="text" name="q" value="" placeholder="Buscar..." role="combobox"
-          aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results"
-          aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results"
-          aria-label="Enter Keyword or Item No." autocomplete="off">
-      </div>
-      <!-- fin buscador -->
-      
+    <header class="header">
       <!-- inicio menu navegacion -->
       <div class="div_menu">
-        <nav>
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="../index.html">Inicio</a></li>
-            <li class="menu__item">
-              <a href="./productos.html">Productos</a>
-            </li>
-            <li class="menu__item">
-              <a href="./categorias.html">Categorias</a>
-            </li>
-            <li class="menu__item active">
-              <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="menu__item">
-              <a href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color:  #ffffe0; justify-content: center;">
+          <img class="logo_mauri" src="../img/logo_mauri_sport.jpg" alt="logo_mauri">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="font-size: 20px" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 50px">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="../pages/categorias.html" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu" style="background-color:#ffffe0;">
+                    <li><a class="dropdown-item" href="../pages/calzado.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="../pages/indumentaria.html">Indumentaria</a></li>
+                    <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" style="margin-left: 10rem" type="search" placeholder="search" aria-label="Search">
+                <button class="btn btn-outline-success" style="color: black; border: 1px solid black;"
+                  type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </nav>
       </div>
       <!-- fin menu navegacion -->
-
 
     </header>
   </section>
@@ -64,15 +75,11 @@
   <!-- fin titulo -->
 
   <!-- inicio de la imagen y ubicacion del local -->
-  <main>
-    <div class="local">
-      <img class="local__imagen" src="/img/local-mauri.sport.png" alt="local.mauri">
-      <p class="local__parrafo">Somos una tienda de indumentaria deportiva ubicada en la ciudad de <a
-          class="local__mapa"
-          href="https://www.google.com.ar/maps/place/Mauri+Sport/@-32.5859789,-61.1722041,17z/data=!3m1!4b1!4m5!3m4!1s0x95b61aea57bce9a5:0xaae449902d90e5f9!8m2!3d-32.5859834!4d-61.1700154"
-          target="_blank">Totoras, Santa Fe-Argentina.</a></p>
+  <div class="card mb-3">
+    <img src="../img/local-mauri.sport.png" class="card-img-top" alt="local-mauri">
+    <div class="card-body">
+        <p class="card-text" style="font-size: 1.5rem; text-align: center;" >Somos una tienda de indumentaria deportiva ubicada en la ciudad de Totoras, Santa Fe, Argentina.</p><a href="https://goo.gl/maps/wi1gyeakKSm9rYHPA" class="stretched-link text-dark" target="_blank" style="position: relative; text-align: center;">Ver Ubicacion</a>
     </div>
-  </main>
   <!-- fin de la imagen y ubicacion del local -->
 
   <!-- inicio footer -->
@@ -103,6 +110,8 @@
     <!-- fin horarios -->
   </footer>
   <!-- fin footer -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

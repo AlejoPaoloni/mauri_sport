@@ -5,56 +5,68 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAURI SPORT</title>
+  <title>MAURI SPORT|Contacto</title>
 
   <!-- icono pagina -->
-  <link rel="shortcut icon" href="../img/logo_mauri_sport.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/ms_logo.jpg" type="image/x-icon">
   <!-- fin icono pagina -->
 
   <!-- css -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <!-- fin css -->
 </head>
 
 <body>
   <section class="hero">
-    <header>
-      <!-- logo mauri -->
-      <img class="mauri_logo" src="../img/logo_mauri_sport.jpg" alt="logo_mauri">
-      <!-- fin logo mauri -->
-
-      <!-- buscador -->
-      <div>
-        <input class="search" type="text" name="q" value="" placeholder="Buscar..." role="combobox"
-          aria-describedby="search-assistive-text" aria-haspopup="listbox" aria-owns="search-results"
-          aria-expanded="false" aria-autocomplete="list" aria-activedescendant="" aria-controls="search-results"
-          aria-label="Enter Keyword or Item No." autocomplete="off">
-      </div>
-      <!-- fin buscador -->
-      
+    <header class="header">
       <!-- inicio menu navegacion -->
       <div class="div_menu">
-        <nav>
-          <ul class="menu">
-            <li class="menu__item">
-              <a href="../index.html">Inicio</a></li>
-            <li class="menu__item">
-              <a href="./productos.html">Productos</a>
-            </li>
-            <li class="menu__item">
-              <a href="./categorias.html">Categorias</a>
-            </li>
-            <li class="menu__item">
-              <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li class="menu__item active">
-              <a href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg" style="background-color:  #ffffe0; justify-content: center;">
+          <img class="logo_mauri" src="../img/logo_mauri_sport.jpg" alt="logo_mauri">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="font-size: 20px" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 50px">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="../pages/categorias.html" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categorias
+                  </a>
+                  <ul class="dropdown-menu" style="background-color:#ffffe0;">
+                    <li><a class="dropdown-item" href="../pages/calzado.html">Calzado</a></li>
+                    <li><a class="dropdown-item" href="../pages/indumentaria.html">Indumentaria</a></li>
+                    <li><a class="dropdown-item" href="../pages/accesorios.html">Accesorios</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="../pages/contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" style="margin-left: 10rem" type="search" placeholder="Search"
+                  aria-label="Search">
+                <button class="btn btn-outline-success" style="color: black; border: 1px solid black;"
+                  type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
         </nav>
       </div>
       <!-- fin menu navegacion -->
-
 
     </header>
   </section>
@@ -64,22 +76,66 @@
   <!-- fin titulo -->
 
   <!-- inicio seccion para contactarse con la tienda -->
-  <form class="contacto">
-    <label class="nombre" for="Nombre">
-      Nombre:
-      <input type="text" id="nombre" required>
-    </label>
-    <label class="email" for="email">
-      Email:
-      <input type="email" id="email" required>
-    </label>
-    <label class="mensaje" for="mensaje">
-      Mensaje...
-      <textarea name="mensaje" id="mensaje" cols="30" rows="4" required></textarea>
-    </label>
-    <button class="boton_contacto" type="submit">Enviar</button>
-    <button class="boton_contacto" type="reset">Reset</button>
-  </form>
+  <section class="container">
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h4>Informacion de contacto</h4>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Telefono
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>3476-460137</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Email
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>maurisport@hotmail.com</strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Direccion
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>Avda San Martin 1169</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Envianos un mensaje</h4>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje...</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribi tu mensaje" rows="3"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- fin seccion para contactarse con la tienda -->
 
   <!-- inicio footer -->
@@ -110,6 +166,8 @@
     <!-- fin horarios -->
   </footer>
   <!-- fin footer -->
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
