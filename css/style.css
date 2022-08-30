@@ -6,6 +6,11 @@
    box-sizing: border-box;
 }
 
+*::selection{
+   background-color: black;
+   color: #ffffe0;
+}
+
 /****GRID****/
 .grid {
    font-family: 'Nunito', sans-serif;
@@ -188,53 +193,9 @@ body {
 
 /*fin nosotros local*/
 
-/*productos*/
-.sec_producto {
+.card{
    background-color: #ffffe0;
 }
-
-.productos {
-   justify-content: center;
-   align-items: center;
-   width: 30%;
-   background-color: black;
-   padding: 10px;
-   border-radius: 5px;
-   display: inline-block;
-   margin-inline: 1.5%;
-   margin-top: 20px;
-   margin-bottom: 15px;
-}
-
-.imagen_producto {
-   width: 100%;
-   margin-bottom: 10px;
-}
-
-.titulo_producto {
-   font-size: 20px;
-   padding: 8px;
-   margin-bottom: 10px;
-   color: white;
-}
-
-.parrafo_producto {
-   font-size: 15px;
-   margin-bottom: 10px;
-   color: white;
-}
-
-.boton_producto {
-   background-color: white;
-   color: black;
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: 400;
-   border-radius: 15px;
-   border: none;
-   padding: 8px;
-}
-
-/*fin productos*/
 
 /***categorias***/
 /*calzado*/
@@ -276,46 +237,6 @@ body {
 }
 
 /*fin contacto*/
-
-/*inicio footer*/
-footer {
-   padding-top: 0;
-   display: flex;
-   flex-direction: column;
-   padding-top: 10rem;
-}
-
-/*redes*/
-.logos_redes {
-   height: 40px;
-   background-color: black;
-}
-
-.redes {
-   padding-top: 1rem;
-   text-align: end;
-   background-color: black;
-}
-
-.redes3 {
-   padding-right: 3rem;
-}
-
-/*horarios*/
-.horarios {
-   text-align: center;
-   list-style-type: none;
-   background-color: black;
-   color: white;
-   padding-bottom: 20px;
-}
-
-.dias {
-   color: #ffffe0;
-}
-
-/*fin horarios*/
-/*fin footer*/
 
 @media screen and (max-width: 480px) {
    /*logo*/
