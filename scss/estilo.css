@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: #000000;
+  color: #ffffe0;
+}
+*::selection {
+  background-color: #000000;
+  color: #ffffe0;
+}
+
+body {
+  height: 100vh;
+}
+
+.titulo {
+  font-family: "Roboto Slab", serif;
+  text-decoration: underline;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/****GRID****/
+.grid {
+  font-family: "Nunito", sans-serif;
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "grid_liquidacion grid_liquidacion grid_liquidacion grid_liquidacion" "grid_running grid_deportes grid_gym grid_moda ";
+  gap: 1rem;
+  /*liquidacion*/
+  /*fin liquidacion*/
+  /*running*/
+  /*fin running*/
+  /*deportes*/
+  /*fin deportes*/
+  /*gym*/
+  /*fin gym*/
+  /*moda*/
+  /*fin moda*/
+}
+.grid .grid_liquidacion {
+  grid-area: grid_liquidacion;
+  background-image: url(../videos/liquidacion_video.gif);
+  height: 350px;
+}
+.grid .grid_running {
+  grid-area: grid_running;
+  background-image: url(../videos/running_video.gif);
+}
+.grid .grid_deportes {
+  grid-area: grid_deportes;
+  background-image: url(../videos/deportes_video.gif);
+}
+.grid .grid_gym {
+  grid-area: grid_gym;
+  background-image: url(../videos/gym_video.gif);
+}
+.grid .grid_moda {
+  grid-area: grid_moda;
+  background-image: url(../videos/moda_video.gif);
+}
+.grid .grid_item {
+  display: grid;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
+  /*transition grid*/
+  /*fin transition grid*/
+  /*transform grid*/
+  /*fin transform grid*/
+}
+.grid .grid_item .grid_item {
+  transition: transform 0.3s;
+}
+.grid .grid_item .grid_item:hover {
+  transform: scale(1.1) translateY(-40px);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.grid .grid_item a {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 1rem;
+  color: rgba(255, 255, 255, 0);
+  padding: 1px;
+  width: 18rem;
+  height: 21rem;
+}
+
+@media screen and (max-width: 480px) {
+  /*titulo*/
+  .titulo {
+    font-size: 20px;
+  }
+  /*fin titulo*/
+  /*grid inicio*/
+  .grid {
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "grid_liquidacion" "grid_running" "grid_deportes" "grid_gym" "grid_moda";
+  }
+  .grid_item {
+    margin-bottom: 20px;
+    margin-left: 1.2rem;
+    width: 250px;
+    height: 180px;
+  }
+  /*fin grid inicio*/
+  /*grid categorias*/
+  .grid_categorias {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "grid_calzado" "grid_indumentaria" "grid_accesorios";
+  }
+  /*fin grid categorias*/
+}/*# sourceMappingURL=estilo.css.map */

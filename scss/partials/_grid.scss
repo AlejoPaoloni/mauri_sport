@@ -1,0 +1,100 @@
+body {
+    height: 100vh;
+  }
+  
+  .titulo {
+    font-family: "Roboto Slab", serif;
+    text-decoration: underline;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/****GRID****/
+.grid {
+    font-family: 'Nunito', sans-serif;
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "grid_liquidacion grid_liquidacion grid_liquidacion grid_liquidacion"
+        "grid_running grid_deportes grid_gym grid_moda ";
+    gap: 1rem;
+
+    /*liquidacion*/
+    .grid_liquidacion {
+        grid-area: grid_liquidacion;
+        background-image: url(../videos/liquidacion_video.gif);
+        height: 350px;
+    }
+
+    /*fin liquidacion*/
+
+    /*running*/
+    .grid_running {
+        grid-area: grid_running;
+        background-image: url(../videos/running_video.gif);
+    }
+
+    /*fin running*/
+
+    /*deportes*/
+    .grid_deportes {
+        grid-area: grid_deportes;
+        background-image: url(../videos/deportes_video.gif);
+    }
+
+    /*fin deportes*/
+
+    /*gym*/
+    .grid_gym {
+        grid-area: grid_gym;
+        background-image: url(../videos/gym_video.gif);
+    }
+
+    /*fin gym*/
+
+    /*moda*/
+    .grid_moda {
+        grid-area: grid_moda;
+        background-image: url(../videos/moda_video.gif)
+    }
+
+    /*fin moda*/
+    .grid_item {
+        display: grid;
+        font-size: 1.6rem;
+        font-weight: 400;
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center center;
+        justify-content: center;
+        align-items: center;
+
+        /*transition grid*/
+        .grid_item {
+            transition: transform .3s;
+        }
+
+        /*fin transition grid*/
+
+        /*transform grid*/
+        .grid_item:hover {
+            transform: scale(1.1) translateY(-40px);
+            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        }
+
+        /*fin transform grid*/
+        a {
+            text-decoration: none;
+            background-color: #00000000;
+            border-radius: 1rem;
+            color: rgba(255, 255, 255, 0);
+            padding: 1px;
+            width: 18rem;
+            height: 21rem;
+        }
+    }
+}

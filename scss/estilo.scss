@@ -1,2 +1,5 @@
-@import "./_variables.scss/fonts";
-@import ".//_variables.scss/colors";
+@import "./partials/fonts";
+@import "./partials/reset";
+@import "./partials/colors";
+@import "./partials/grid";
+@import "./partials/mobile";
