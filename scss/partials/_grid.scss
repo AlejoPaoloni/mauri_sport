@@ -3,7 +3,7 @@ body {
   }
   
   .titulo {
-    font-family: "Roboto Slab", serif;
+    font-family: $fontroboto;
     text-decoration: underline;
     color: black;
     display: flex;
@@ -13,7 +13,7 @@ body {
 
 /****GRID****/
 .grid {
-    font-family: 'Nunito', sans-serif;
+    font-family: $fontnunito;
     padding: 6rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
