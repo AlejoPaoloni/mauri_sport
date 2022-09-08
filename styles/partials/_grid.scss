@@ -1,18 +1,5 @@
-body {
-    height: 100vh;
-  }
-  
-  .titulo {
-    font-family: $fontroboto;
-    text-decoration: underline;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
 /****GRID****/
-.grid {
+.sec-grid {
     font-family: $fontnunito;
     padding: 6rem;
     display: grid;
@@ -75,7 +62,7 @@ body {
 
         /*transition grid*/
         .grid_item {
-            transition: transform .3s;
+            transition: all 3s;
         }
 
         /*fin transition grid*/
@@ -93,8 +80,17 @@ body {
             border-radius: 1rem;
             color: rgba(255, 255, 255, 0);
             padding: 1px;
-            width: 18rem;
-            height: 21rem;
         }
     }
+}
+
+@mixin tamaños($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+.grid_item a{
+    width: 18rem;
+    height: 21rem;
+    @include tamaños(18rem, 21rem)
 }

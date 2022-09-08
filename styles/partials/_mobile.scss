@@ -1,0 +1,58 @@
+@media screen and (max-width: 768px) {
+   /*titulo*/
+   .titulo {
+      font-size: 40px;
+   }
+
+   /*fin titulo*/
+
+   /*grid inicio*/
+   .sec-grid {
+      justify-content: center;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+         "grid_liquidacion"
+         "grid_running"
+         "grid_deportes"
+         "grid_gym"
+         "grid_moda";
+
+      .grid_item {
+         width: 36rem;
+      }
+   }
+
+   /*fin grid inicio*/
+}
+
+@media screen and (max-width: 480px) {
+
+   /*titulo*/
+   .titulo {
+      font-size: 20px;
+   }
+
+   /*fin titulo*/
+
+   /*grid inicio*/
+   .sec-grid {
+      justify-content: center;
+      flex-direction: column;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-areas:
+         "grid_liquidacion"
+         "grid_running"
+         "grid_deportes"
+         "grid_gym"
+         "grid_moda";
+
+      .grid_item {
+         width: 22rem;
+      }
+   }
+
+   /*fin grid inicio*/
+}
