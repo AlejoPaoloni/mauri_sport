@@ -1,0 +1,27 @@
+$redes: (
+    facebook: #3b5998,
+    instagram: #ae309f,
+    email: #dd4b39,
+);
+
+.redes{
+    font-size: 35px;
+
+    .fa-facebook{
+        margin-right: 5px;
+        color: #3b5998;
+    }
+
+    .fa-instagram{
+        margin-right: 5px;
+        color: #ae309f;
+    }
+
+    .fa-envelope{
+        color: #dd4b39;
+    }
+}
+
+.copyright{
+    font-size: 12px;
+}
