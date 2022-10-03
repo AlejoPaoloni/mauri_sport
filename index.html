@@ -10,6 +10,7 @@
   <meta name="description"
     content="En Mauri Sport encontra todas las marcas de indumentaria deportiva y moda. ¡Ingresá y comprá online!">
   <meta name="keywords" content="Indumentaria, Deportes, Accesorios, Moda.">
+  <!-- fin seo -->
 
   <!-- icono pagina -->
   <link rel="shortcut icon" href="./img/ms_logo.jpg" type="image/x-icon">
@@ -23,57 +24,59 @@
 </head>
 
 <body>
-  <section class="hero">
-    <header class="header">
-      <!-- inicio menu navegacion -->
-      <div class="div_menu">
-        <nav class="navbar navbar-expand-lg" style="background-color:  #ffffe0; justify-content: center;">
-          <img class="logo_mauri" src="./img/logo_mauri_sport.jpg" alt="logo_mauri" style="width:25rem">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" style="font-size: 20px" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-3 mb-lg-5" style="margin-left: 50px">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/productos.html">Productos</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Categorias
-                  </a>
-                  <ul class="dropdown-menu" style="background-color:#ffffe0;">
-                    <li><a class="dropdown-item" href="./pages/calzado.html">Calzado</a></li>
-                    <li><a class="dropdown-item" href="./pages/indumentaria.html">Indumentaria</a></li>
-                    <li><a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
+  <header>
+    <!-- banner envios -->
+    <div class="banner-header d-flex p-2">Envios gratis desde $19.999</div>
+    <!-- fin banner envios -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- logo mauri -->
+        <a class="navbar-brand" href="./index.html"><img class="logo_mauri" src="./img/mauri_logo.jpg"
+            alt="logo_mauri_sport"></a>
+        <!-- fin logo mauri -->
+        <button class="navbar-toggler menu_hamburguesa" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/calzado.html">Calzado</a></li>
+                <li><a class="dropdown-item" href="./pages/indumentaria.html">Indumentaria</a></li>
+                <li><a class="dropdown-item" href="./pages/accesorios.html">Accesorios</a></li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" style="margin-left: 10rem;" type="search" placeholder="search"
-                  aria-label="Search">
-                <button class="btn btn-outline-secondary" style="color: black; border: 1px solid black;"
-                  type="submit">Buscar</button>
-              </form>
-            </div>
-          </div>
-        </nav>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <!-- searchbar -->
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+          <!-- fin searchbar -->
+        </div>
       </div>
-      <!-- fin menu navegacion -->
-    </header>
-  </section>
+    </nav>
+    <!-- fin navbar -->
+  </header>
 
   <!-- titulo -->
   <h1 class="titulo">Bienvenidos a la tienda online de Mauri Sport</h1>
@@ -118,8 +121,8 @@
 
         <!-- redes -->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Redes</h5>
-          <div class="redes">
+          <h5 class="redes text-uppercase">Redes</h5>
+          <div class="redes-sociales">
             <!-- facebook -->
             <a href="https://www.facebook.com/profile.php?id=100006387197580" target="_BLANK"><i
                 class="fab fa-facebook icon-redes" aria-hidden="true"></i></a>

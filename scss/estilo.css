@@ -18,33 +18,52 @@ body {
   background-color: #ffffe0;
 }
 
+.banner-header {
+  background-color: #000000;
+  color: #ffe787;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_mauri {
+  height: 190px;
+  margin-right: 2rem;
+}
+
+.navbar {
+  font-size: 20px;
+  background-color: #ffe787;
+  font-family: "Nunito", sans-serif;
+}
 .navbar .nav-item {
-  margin: 5px;
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  margin: 1rem;
 }
 .navbar .nav-item a {
-  background-color: #ffffe0;
+  background-color: #ffe787;
   color: #000000;
 }
 .navbar .nav-item .nav-link {
-  padding: 10px;
+  color: #ffe787;
   background-color: #000000;
-  color: #ffffe0;
+  padding: 10px;
   border: 5px solid black;
   border-radius: 15px;
 }
 .navbar .nav-item .nav-link:hover {
   transition: background 1s, color 2s;
-  background-color: #ffffe0;
+  background-color: #ffe787;
   color: #000000;
 }
 .navbar .nav-item .nav-link.active {
-  background-color: #ffffe0;
+  background-color: #ffe787;
   color: #000000;
 }
 
 .titulo {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-family: "Roboto Slab", serif;
   text-decoration: underline;
   color: #000000;
@@ -53,26 +72,27 @@ body {
   align-items: center;
 }
 
-@-webkit-keyframes slide-top {
+@-webkit-keyframes rotate-vert-center {
   0% {
-    transform: translateY(0);
+    transform: rotateY(0);
   }
   100% {
-    transform: translateY(-100px);
+    transform: rotateY(360deg);
   }
 }
-@keyframes slide-top {
+@keyframes rotate-vert-center {
   0% {
-    transform: translateY(0);
+    transform: rotateY(0);
   }
   100% {
-    transform: translateY(-100px);
+    transform: rotateY(360deg);
   }
 }
 /****GRID****/
 .sec-grid {
   font-family: "Nunito", sans-serif;
   padding: 6rem;
+  margin-top: -50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -150,18 +170,18 @@ body {
   margin-top: 2rem;
 }
 
-.redes {
+.redes-sociales {
   font-size: 35px;
 }
-.redes .fa-facebook {
+.redes-sociales .fa-facebook {
   margin-right: 5px;
   color: #3b5998;
 }
-.redes .fa-instagram {
+.redes-sociales .fa-instagram {
   margin-right: 5px;
   color: #ae309f;
 }
-.redes .fa-envelope {
+.redes-sociales .fa-envelope {
   color: #dd4b39;
 }
 
@@ -170,6 +190,11 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  /*logo*/
+  .logo_mauri {
+    height: 180px;
+  }
+  /*fin logo*/
   /*titulo*/
   .titulo {
     font-size: 40px;
@@ -187,23 +212,40 @@ body {
     width: 36rem;
   }
   /*fin grid inicio*/
+  /*redes*/
+  .redes {
+    padding-top: 1rem;
+  }
+  /*fin redes*/
 }
 @media screen and (max-width: 480px) {
+  /*logo*/
+  .logo_mauri {
+    height: 130px;
+  }
+  /*fin logo*/
   /*titulo*/
   .titulo {
-    font-size: 20px;
+    font-size: 23px;
   }
   /*fin titulo*/
   /*grid inicio*/
   .sec-grid {
+    margin-top: -70px;
+    margin-bottom: -70px;
     justify-content: center;
     flex-direction: column;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "grid_liquidacion" "grid_running" "grid_deportes" "grid_gym" "grid_moda";
+    /*fin grid inicio*/
+    /*redes*/
+    /*fin redes*/
   }
   .sec-grid .grid_item {
     width: 22rem;
   }
-  /*fin grid inicio*/
+  .sec-grid .redes {
+    padding-top: 1rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */
