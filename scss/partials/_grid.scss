@@ -61,20 +61,6 @@
         justify-content: center;
         align-items: center;
 
-        /*transition grid*/
-        .grid_item {
-            transition: all 3s;
-        }
-
-        /*fin transition grid*/
-
-        /*transform grid*/
-        .grid_item:hover {
-            transform: scale(1.1) translateY(-40px);
-            box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-        }
-
-        /*fin transform grid*/
         a {
             text-decoration: none;
             background-color: #00000000;

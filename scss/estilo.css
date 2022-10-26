@@ -139,17 +139,6 @@ body {
   background-position: center center;
   justify-content: center;
   align-items: center;
-  /*transition grid*/
-  /*fin transition grid*/
-  /*transform grid*/
-  /*fin transform grid*/
-}
-.sec-grid .grid_item .grid_item {
-  transition: all 3s;
-}
-.sec-grid .grid_item .grid_item:hover {
-  transform: scale(1.1) translateY(-40px);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 .sec-grid .grid_item a {
   text-decoration: none;
