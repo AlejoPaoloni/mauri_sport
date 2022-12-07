@@ -162,15 +162,15 @@ body {
 .redes-sociales {
   font-size: 35px;
 }
-.redes-sociales .fa-facebook {
+.redes-sociales .bi-facebook {
   margin-right: 5px;
   color: #3b5998;
 }
-.redes-sociales .fa-instagram {
+.redes-sociales .bi-instagram {
   margin-right: 5px;
   color: #ae309f;
 }
-.redes-sociales .fa-envelope {
+.redes-sociales .bi-envelope {
   color: #dd4b39;
 }
 
